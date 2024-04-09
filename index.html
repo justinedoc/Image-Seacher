@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="search-box">
+            <input type="text" placeholder="search image" id="searchInput" spellcheck="false">
+            <button id="submit"><i class='bx bx-search-alt'></i></button>
+        </div>
+
+        <div id="image-box" class="active">
+            <img src="img/search.png" alt="image searched" id="image">
+        </div>
+
+        <div class="load-box">
+            <i class='bx bx-loader-alt bx-spin bx-flip-vertical' style='color:#000' ></i>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
