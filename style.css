@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -102,6 +103,40 @@ body {
 .load-box i {
     font-size: 40px;
 }
+
+.download-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.download-box a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: #000;
+    cursor: pointer;
+    scale: .01;
+    animation: pop .3s linear forwards;
+    animation-delay: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pop {
+    to {scale: 1;}
+}
+
+.download-box a i {
+    font-size: 25px;
+    color: #fff;
+}
+
+
 @media only screen and (max-width: 360px) {
     body {
         padding-top: 0px;
