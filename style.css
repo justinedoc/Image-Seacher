@@ -70,6 +70,10 @@ body {
     color: #000;
 }
 
+.search-box input::placeholder {
+    text-transform: capitalize;
+}
+
 .search-box button {
     width: 50px;
     border: none;
