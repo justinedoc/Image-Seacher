@@ -34,16 +34,16 @@ const fetchImage = () => {
   const showLoading =  setInterval( () => {
         counter++
         console.log(counter);
-        if(counter === 50) {
+        if(counter === 60) {
             load_box.classList.remove("active");
             image_box.classList.add("active");
         }
 
-        if (counter >= 60) {
+        if (counter >= 70) {
             clearInterval(showLoading)
             counter = 0;
         }
-    }, 50)
+    }, 60)
 }
 
 const fetchImageSearch = () => {
