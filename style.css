@@ -21,7 +21,7 @@ body {
     align-items: center;
     border-radius: 20px 40px 20px 40px;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px 20px;
     background: #fff;
     box-shadow: 2px 10px 20px #0000002a;
 }
@@ -52,13 +52,14 @@ body {
 }
 
 .search-box {
-    height: 40px;
+    height: 8vh;
     width: 100%;
     display: flex;
     justify-content: center;
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .search-box input {
@@ -137,7 +138,7 @@ body {
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     body {
         padding-top: 0px;
     }
@@ -151,13 +152,18 @@ body {
     }
 
     .search-box {
-        height: 50px;
+        height: 8vh;
         border-radius: 20px;
-        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .search-box input {
+        width: 100%;
+        height: 100%;
     }
 
     #image-box {
-        width: 310px;
+        width: 340px;
         height: 0;
         text-align: center;
         font-size: 20px;

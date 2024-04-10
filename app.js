@@ -70,6 +70,7 @@ const fetchImageSearch = () => {
         const image_box = document.getElementById("image-box");
         image_box.innerHTML = `<img src="${data.photos[0].src.original}" id="image">`;
         imgURL = data.photos[0].src.original;
+        downloadImg(imgURL);
     }).catch((err) => {
         const image_box = document.getElementById("image-box")
         image_box.innerHTML = "Image Not Found";
