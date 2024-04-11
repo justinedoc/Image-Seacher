@@ -35,7 +35,7 @@ body {
 }
 
 #image-box.active {
-    height: 370px;
+    height: 360px;
     display: block;
 }
 
@@ -52,14 +52,13 @@ body {
 }
 
 .search-box {
-    height: 8vh;
     width: 100%;
     display: flex;
     justify-content: center;
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .search-box input {

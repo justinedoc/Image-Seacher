@@ -50,9 +50,6 @@ const fetchImage = () => {
     }, 60)
 }
 
-
-
-
 // image fetcher
 let imgURL;
 const fetchImageSearch = () => {
@@ -79,10 +76,7 @@ const fetchImageSearch = () => {
 }
 
 
-
-
 // download Image (btn eventListener)
-
 
 const downloadBtn = document.getElementById("download-Btn");
 downloadBtn.addEventListener("click", () => {
@@ -90,9 +84,7 @@ downloadBtn.addEventListener("click", () => {
 });
 
 
-
 // download image
-
 function downloadImg(url) {
     fetch(url, {
         method: 'Get',
@@ -105,8 +97,6 @@ function downloadImg(url) {
         link.href = tempDownloadUrl;
         link.download = `${url.replace(/^.*[\\\/]/, '')}`;
     })
-
-
 }
 
 
